@@ -42,6 +42,7 @@ header .shopify-section__header {
 
 nav {
     background-color: #0468ae;
+    display: block;
     position: relative;
     left: 0;
     width: 100%;
@@ -52,25 +53,41 @@ nav .container {
     max-width: 1480px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 28px;
 }
 
 .menu {
-    display: inline-block;
-    width: 100%;
-    height: auto;
     list-style: none;
     margin: 0;
     padding: 0;
     color: white;
-    position: relative;
-    margin-right: 30px;
 }
 
 nav .menu_bar {
     position: relative;
     display: inline-block;
-    margin-right: 35px;
+    margin-right: 25px;
     padding: 17px 0;
+}
+
+.nav-bar_link {
+    color: #fff;
+}
+
+.nav_dropdown {
+    position: absolute;
+    top: 100%;
+    padding: 16px 0;
+    list-style: none;
+    background: var(--secondary-background);
+    color: var(--text-color);
+    border-radius: 0 0 3px 3px;
+    border: 1px solid var(--border-color);
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity .2s ease-in-out,visibility .2s ease-in-out;
 }
 
 img {
