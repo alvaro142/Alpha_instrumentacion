@@ -42,6 +42,9 @@ header .shopify-section__header {
 
 nav {
     background-color: #0468ae;
+    position: relative;
+    left: 0;
+    width: 100%;
 }
 
 nav .container {
@@ -52,16 +55,18 @@ nav .container {
 }
 
 .menu {
+    display: inline-block;
     width: 100%;
     height: auto;
     list-style: none;
     margin: 0;
     padding: 0;
     color: white;
+    position: relative;
+    margin-right: 30px;
 }
 
 nav .menu_bar {
-    display: inline-block;
     position: relative;
     display: inline-block;
     margin-right: 35px;
